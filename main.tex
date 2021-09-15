@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\usepackage{setspace}
+
+\usepackage{eso-pic,graphicx}
+\usepackage[top=2cm, bottom=2cm, paperwidth=8in, paperheight=8in]{geometry}
+
+\usepackage[english]{babel} 
+\setlength{\parskip}{1em} %for new lines
+
+\usepackage{avant}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+
+\usepackage{verse}
+%\usepackage[numberpoems, clearpageafterpoem, useincipits]{poetrytex}
+\pagenumbering{gobble}
+\setlength\parindent{0pt}
+
+\usepackage{hyperref} %hyperlinks
+
+\usepackage{graphicx}
+
+\definecolor{darkcyan}{rgb}{0.07, 0.26, 0.26}
+\definecolor{darksienna}{rgb}{0.24, 0.08, 0.08}
+	
+% Macros
+
+\newcommand{\bo}[1] {
+  \textbf{#1}}
+
+\newcommand{\bblu}[1] {
+  \textbf{\textcolor{darkcyan}{#1}}}
+  
+\newcommand{\bbro}[1] {\textbf{\textcolor{darksienna}{#1}}}
+
+\newcommand{\bckg}[1]{\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{#1}}}
+
+\urlstyle{same}
+
+\onehalfspacing
+\begin{document}
+
+%% title page
+%\phantom{;}
+%\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{Assets/cosmoose_cover_subtitle}}
+%\clearpage
+
+\input{Input/How_June_RuD_Met}
+
+\end{document}
+
